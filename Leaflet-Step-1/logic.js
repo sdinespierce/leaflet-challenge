@@ -31,18 +31,6 @@ d3.json(link).then(function(response) {
     }
 
 
-    // fix syntax and geojson data
-    // for earthquake in data {
-    //   var circle = L.circle(coords,{
-    //     color: depth,
-    //     fillOpacity: 0.5,
-    //     radius: magnitude
-    //   }).addTo(myMap);
-    //   popupText = ;
-    //   circle.bindPopup(popupText);
-
-    // };
-
 });
 
 function getColor(depth) {
