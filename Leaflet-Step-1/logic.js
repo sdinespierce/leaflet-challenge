@@ -13,9 +13,7 @@ var link = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.g
 
 // Getting our GeoJSON data
 d3.json(link).then(function(response) {
-    console.log(response.features);
     let earthquakes = response.features;
-    console.log(earthquakes[0].geometry.coordinates)
     for (var i=0; i<earthquakes.length; i++) {
         coords = [earthquakes[i].geometry.coordinates[1], earthquakes[i].geometry.coordinates[0]];
         depth = earthquakes[i].geometry.coordinates[2];
